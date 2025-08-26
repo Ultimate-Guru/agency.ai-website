@@ -7,7 +7,7 @@ const ThemeToggleBtn = ({ theme, setTheme }) => {
     useEffect(() => {
         const preferDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
         setTheme(theme || (preferDarkMode ? 'dark' : 'light' ));
-    });
+    }, []);
 
     // Update the document class and localStorage when theme changes
     useEffect(() => {

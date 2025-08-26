@@ -2,7 +2,7 @@
 
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *))
+@custom-variant dark (&:where(.dark, .dark *));
 
 * {
     font-family: "Manrope", sans-serif;
@@ -11,8 +11,4 @@
 
 @theme {
     --color-primary: #5044E5;
-}
-
-body {
-    scroll-behavior: smooth;
 }
